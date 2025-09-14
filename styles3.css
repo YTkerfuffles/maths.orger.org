@@ -32,7 +32,7 @@ ul{margin-top:0}
 iframe{border:0;border-radius:12px;max-width:100%}
 .pc-only { display:block; }
 .mobile-only { display:none; }
-@media (max-width:768px){
-  .pc-only { display:none; }
-  .mobile-only { display:block; }
+@media (max-width: 1100px), (hover: none) and (pointer: coarse) {
+  .pc-only { display: none; }
+  .mobile-only { display: block; }
 }
