@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abel's theorem</title>
+<link rel="stylesheet" href="../../styles3.css">
+<meta name="color-scheme" content="dark light">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="site-title"><a href="https://maths.orger.org">maths.orger.org</a></div>
+      <span class="badge">by Owen Orger</span>
+    </div>
+
+  <h1>Abel's theorem for power series</h1>
+  <a href="../assets/Abels theorem.pdf" target="_blank" rel="noopener" style="font-size: 27px;">
+    <br>See the proof that taylor series work at the edge of their radius of convergence (provided they work inside and are continuous at that point and the series converges at that point) here
+  </a>
+  <br>
+
+    <footer>
+      <div>Built with plain HTML/CSS, hosted on GitHub Pages. Everything on this website is free to use and reproduce for any purpose.</div>
+      <div class="small">Email: <a href="mailto:mathsorgerorg@gmail.com">mathsorgerorg@gmail.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
