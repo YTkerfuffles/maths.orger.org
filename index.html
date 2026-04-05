@@ -37,24 +37,33 @@
     </div>
   </section>
 
-  <style>
-  /* Basic styling to make the table look like a grid */
+<style>
+  body {
+    background-color: #f0f0f0; /* Light gray page background to contrast with white table */
+    font-family: Arial, sans-serif;
+  }
+
   table {
-    border-collapse: collapse; /* Removes double borders */
+    border-collapse: collapse;
+    background-color: #ffffff; /* White table background */
   }
 
   td {
-    /* The requested dimensions */
     width: 200px;
     height: 30px;
-    
-    /* Visual styling */
     border: 1px solid #000;
-    padding: 0 5px; /* Adds a little space so text doesn't hit the edge */
-    
-    /* Optional: Centers text vertically and horizontally */
+    background-color: #ffffff; /* White cell background */
+    padding: 0 8px;
     vertical-align: middle;
-    text-align: left; 
+    text-align: left;
+    color: #000000; /* Black text for visibility */
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
+  }
+
+  /* Optional: Highlight cell on hover */
+  td:hover {
+    background-color: #f5f5f5;
   }
 </style>
 </head>
