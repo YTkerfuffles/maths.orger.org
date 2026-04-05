@@ -4,6 +4,24 @@
 <link rel="stylesheet" href="styles3.css">
 <style>
   /* Table-specific styles to override dark theme */
+    /* Add these inside the <style> tag, below the existing .level-table styles */
+    .bg-yes { 
+      background-color: #99ff99 !important; /* Light Green */
+      color: #000000 !important;            /* Dark Green Text */
+    }
+    .bg-no { 
+      background-color: #ff9999 !important; /* Light Red */
+      color: #000000 !important;            /* Dark Red Text */
+    }
+    .bg-partial { 
+      background-color: #ffff88 !important; /* Light Yellow */
+      color: #000000 !important;            /* Dark Yellow Text */
+    }
+    .bg-header { 
+      background-color: #ffffff !important; /* Light Gray */
+      color: #000000 !important;            /* Black Text */
+      font-weight: bold;
+    }
   .level-table-container {
     background-color: #ffffff !important;
     padding: 20px;
@@ -96,71 +114,71 @@
       <!-- Row 2 -->
       <tr>
         <td contenteditable="false">1</td>
-        <td contenteditable="false">Yes</td>
-        <td contenteditable="false">N/A (Video)</td>
+        <td contenteditable="false" class="bg-yes">Yes</td>
+        <td contenteditable="false" class="bg-yes">N/A (Video)</td>
         <td contenteditable="false">Sep 19 2025</td>
       </tr>
       <!-- Row 3 -->
       <tr>
         <td contenteditable="false">2</td>
-        <td contenteditable="false">Yes</td>
-        <td contenteditable="false">Yes</td>
+        <td contenteditable="false" class="bg-yes">Yes</td>
+        <td contenteditable="false" class="bg-yes">Yes</td>
         <td contenteditable="false">Apr 5 2026</td>
       </tr>
       <!-- Row 4 -->
       <tr>
         <td contenteditable="false">3</td>
-        <td contenteditable="false">3.1 and 3.2 only currently</td>
-        <td contenteditable="false">Not yet</td>
+        <td contenteditable="false" class="bg-partial">3.1 and 3.2 only currently</td>
+        <td contenteditable="false" class="bg-no">Not yet</td>
         <td contenteditable="false">N/A</td>
       </tr>
       <!-- Row 5 -->
       <tr>
         <td contenteditable="false">4</td>
-        <td contenteditable="false">Yes</td>
-        <td contenteditable="false">Not yet</td>
+        <td contenteditable="false" class="bg-yes">Yes</td>
+        <td contenteditable="false" class="bg-no">Not yet</td>
         <td contenteditable="false">Apr 4 2026</td>
       </tr>
       <!-- Row 6 -->
       <tr>
         <td contenteditable="false">5</td>
-        <td contenteditable="false">Not yet</td>
-        <td contenteditable="false">Yes (Vacuously)</td>
+        <td contenteditable="false" class="bg-no">Not yet</td>
+        <td contenteditable="false" class="bg-yes">Yes (Vacuously)</td>
         <td contenteditable="false">N/A</td>
       </tr>
       <!-- Row 7 -->
       <tr>
         <td contenteditable="false">6</td>
-        <td contenteditable="false">Yes</td>
-        <td contenteditable="false">Not yet</td>
+        <td contenteditable="false" class="bg-yes">Yes</td>
+        <td contenteditable="false" class="bg-no">Not yet</td>
         <td contenteditable="false">Mar 31 2026</td>
       </tr>
       <!-- Row 8 -->
       <tr>
         <td contenteditable="false">7</td>
-        <td contenteditable="false">Yes</td>
-        <td contenteditable="false">Not yet</td>
+        <td contenteditable="false" class="bg-yes">Yes</td>
+        <td contenteditable="false" class="bg-no">Not yet</td>
         <td contenteditable="false">Mar 31 2026</td>
       </tr>
       <!-- Row 9 -->
       <tr>
         <td contenteditable="false">8</td>
-        <td contenteditable="false">Yes</td>
-        <td contenteditable="false">Not yet</td>
+        <td contenteditable="false" class="bg-yes">Yes</td>
+        <td contenteditable="false" class="bg-no">Not yet</td>
         <td contenteditable="false">Mar 28 2026</td>
       </tr>
       <!-- Row 10 -->
       <tr>
         <td contenteditable="false">9</td>
-        <td contenteditable="false">Not yet</td>
-        <td contenteditable="false">Yes (Vacuously)</td>
+        <td contenteditable="false" class="bg-no">Not yet</td>
+        <td contenteditable="false" class="bg-yes">Yes (Vacuously)</td>
         <td contenteditable="false">N/A</td>
       </tr>
       <!-- Row 11 -->
       <tr>
         <td contenteditable="false">10</td>
-        <td contenteditable="false">10.1 only currently</td>
-        <td contenteditable="false">Not yet</td>
+        <td contenteditable="false" class="bg-partial">10.1 only currently</td>
+        <td contenteditable="false" class="bg-partial">10.2+ only currently (Vacuously)</td>
         <td contenteditable="false">N/A</td>
       </tr>
     </table>
