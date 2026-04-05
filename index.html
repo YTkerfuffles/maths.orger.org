@@ -45,21 +45,24 @@
   }
 
   td {
+    /* Dimensions */
     width: 200px;
     height: 30px;
+    
+    /* Borders */
     border: 1px solid #000;
-    background-color: #ffffff; /* White cell background */
-    padding: 0 8px;
-    vertical-align: middle;
-    text-align: left;
-    color: #000000; /* Black text for visibility */
-    font-size: 14px;
-    box-sizing: border-box; /* Ensures padding doesn't affect dimensions */
-  }
-
-  /* Optional: Highlight cell on hover */
-  td:hover {
-    background-color: #f5f5f5;
+    
+    /* Text Styling - Crucial for small cells */
+    color: #000000;       /* Explicit black text */
+    font-size: 14px;      /* Reasonable font size */
+    line-height: 30px;    /* Matches height to vertically center text */
+    padding: 0 5px;       /* Small side padding, no top/bottom padding */
+    
+    /* Behavior */
+    white-space: nowrap;  /* Prevents text from wrapping to a new line */
+    overflow: hidden;     /* Hides text if it is too long for the cell */
+    cursor: text;         /* Shows a text cursor when hovering */
+    outline: none;        /* Removes the blue highlight box when clicking */
   }
 </style>
 </head>
