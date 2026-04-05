@@ -6,6 +6,39 @@
 <title>maths.orger.org – Home</title>
 <link rel="stylesheet" href="styles3.css">
 <meta name="color-scheme" content="dark light">
+<style>
+  /* Table-specific styles that override the theme */
+  table {
+    border-collapse: collapse;
+    background-color: #ffffff !important;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
+  td {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000000;
+    background-color: #ffffff !important;
+    color: #000000 !important; /* Force black text */
+    font-size: 14px;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 30px;
+    padding: 0 8px;
+    vertical-align: middle;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  td:focus {
+    outline: 2px solid #79c0ff;
+    outline-offset: -2px;
+    background-color: #f0f8ff !important;
+  }
+</style>
 </head>
 <body>
   <div class="container">
@@ -37,116 +70,89 @@
     </div>
   </section>
 
-<style>
 
-  table {
-    border-collapse: collapse;
-    background-color: #ffffff; /* White table background */
-  }
 
-  td {
-    /* Dimensions */
-    width: 200px;
-    height: 30px;
-    
-    /* Borders */
-    border: 1px solid #000;
-    
-    /* Text Styling - Crucial for small cells */
-    color: #000000;       /* Explicit black text */
-    font-size: 14px;      /* Reasonable font size */
-    line-height: 30px;    /* Matches height to vertically center text */
-    padding: 0 5px;       /* Small side padding, no top/bottom padding */
-    
-    /* Behavior */
-    white-space: nowrap;  /* Prevents text from wrapping to a new line */
-    overflow: hidden;     /* Hides text if it is too long for the cell */
-    cursor: text;         /* Shows a text cursor when hovering */
-    outline: none;        /* Removes the blue highlight box when clicking */
-  }
-</style>
-</head>
-<body>
-
-<table>
-  <!-- Row 1 -->
-  <tr>
-    <td contenteditable="Level"></td>
-    <td contenteditable="Complete?"></td>
-    <td contenteditable="Latexed?"></td>
-    <td contenteditable="Last update"></td>
-  </tr>
-  <!-- Row 2 -->
-  <tr>
-    <td contenteditable="1"></td>
-    <td contenteditable="Yes"></td>
-    <td contenteditable="N/A (Video)"></td>
-    <td contenteditable="Sep 19 2025"></td>
-  </tr>
-  <!-- Row 3 -->
-  <tr>
-    <td contenteditable="2"></td>
-    <td contenteditable="Yes"></td>
-    <td contenteditable="Yes"></td>
-    <td contenteditable="Apr 5 2026"></td>
-  </tr>
-  <!-- Row 4 -->
-  <tr>
-    <td contenteditable="3"></td>
-    <td contenteditable="Partially"></td>
-    <td contenteditable="Not yet"></td>
-    <td contenteditable="N/A"></td>
-  </tr>
-  <!-- Row 5 -->
-  <tr>
-    <td contenteditable="4"></td>
-    <td contenteditable="Yes"></td>
-    <td contenteditable="Not yet"></td>
-    <td contenteditable="Apr 4 2026"></td>
-  </tr>
-  <!-- Row 6 -->
-  <tr>
-    <td contenteditable="5"></td>
-    <td contenteditable="No"></td>
-    <td contenteditable="N/A"></td>
-    <td contenteditable="N/A"></td>
-  </tr>
-  <!-- Row 7 -->
-  <tr>
-    <td contenteditable="6"></td>
-    <td contenteditable="Yes"></td>
-    <td contenteditable="Not yet"></td>
-    <td contenteditable="Mar 31 2026"></td>
-  </tr>
-  <!-- Row 8 -->
-  <tr>
-    <td contenteditable="7"></td>
-    <td contenteditable="Yes"></td>
-    <td contenteditable="Not yet"></td>
-    <td contenteditable="Mar 31 2026"></td>
-  </tr>
-  <!-- Row 9 -->
-  <tr>
-    <td contenteditable="8"></td>
-    <td contenteditable="Yes"></td>
-    <td contenteditable="Not yet"></td>
-    <td contenteditable="Mar 28 2026"></td>
-  </tr>
-  <!-- Row 10 -->
-  <tr>
-    <td contenteditable="9"></td>
-    <td contenteditable="No"></td>
-    <td contenteditable="N/A"></td>
-    <td contenteditable="N/A"></td>
-  </tr>
-  <!-- Row 11 -->
-  <tr>
-    <td contenteditable="10"></td>
-    <td contenteditable="10.1 only"></td>
-    <td contenteditable="Not yet"></td>
-    <td contenteditable="N/A"></td>
-  </tr>
-</table>
+<div class="container">
+  <table>
+    <!-- Row 1 -->
+    <tr>
+      <td contenteditable="Level"></td>
+      <td contenteditable="Complete?"></td>
+      <td contenteditable="Latexed?"></td>
+      <td contenteditable="Last update"></td>
+    </tr>
+    <!-- Row 2 -->
+    <tr>
+      <td contenteditable="1"></td>
+      <td contenteditable="Yes"></td>
+      <td contenteditable="N/A (Video)"></td>
+      <td contenteditable="Sep 19 2025"></td>
+    </tr>
+    <!-- Row 3 -->
+    <tr>
+      <td contenteditable="2"></td>
+      <td contenteditable="Yes"></td>
+      <td contenteditable="Yes"></td>
+      <td contenteditable="Apr 5 2026"></td>
+    </tr>
+    <!-- Row 4 -->
+    <tr>
+      <td contenteditable="3"></td>
+      <td contenteditable="Partially"></td>
+      <td contenteditable="Not yet"></td>
+      <td contenteditable="N/A"></td>
+    </tr>
+    <!-- Row 5 -->
+    <tr>
+      <td contenteditable="4"></td>
+      <td contenteditable="Yes"></td>
+      <td contenteditable="Not yet"></td>
+      <td contenteditable="Apr 4 2026"></td>
+    </tr>
+    <!-- Row 6 -->
+    <tr>
+      <td contenteditable="5"></td>
+      <td contenteditable="No"></td>
+      <td contenteditable="N/A"></td>
+      <td contenteditable="N/A"></td>
+    </tr>
+    <!-- Row 7 -->
+    <tr>
+      <td contenteditable="6"></td>
+      <td contenteditable="Yes"></td>
+      <td contenteditable="Not yet"></td>
+      <td contenteditable="Mar 31 2026"></td>
+    </tr>
+    <!-- Row 8 -->
+    <tr>
+      <td contenteditable="7"></td>
+      <td contenteditable="Yes"></td>
+      <td contenteditable="Not yet"></td>
+      <td contenteditable="Mar 31 2026"></td>
+    </tr>
+    <!-- Row 9 -->
+    <tr>
+      <td contenteditable="8"></td>
+      <td contenteditable="Yes"></td>
+      <td contenteditable="Not yet"></td>
+      <td contenteditable="Mar 28 2026"></td>
+    </tr>
+    <!-- Row 10 -->
+    <tr>
+      <td contenteditable="9"></td>
+      <td contenteditable="No"></td>
+      <td contenteditable="N/A"></td>
+      <td contenteditable="N/A"></td>
+    </tr>
+    <!-- Row 11 -->
+    <tr>
+      <td contenteditable="10"></td>
+      <td contenteditable="10.1 only"></td>
+      <td contenteditable="Not yet"></td>
+      <td contenteditable="N/A"></td>
+    </tr>
+  </table>
+</div>
     
   <h2 class="h2">Explore</h2>
   <div class="grid">
